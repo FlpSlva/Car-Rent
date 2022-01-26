@@ -1,4 +1,5 @@
 import {inject, injectable} from 'tsyringe'
+import { AppError } from '../../../../../errors/App.Error';
 import { ISpecificationsRepository } from "../../../repositories/ISpecificationsRepositorty";
 
 
