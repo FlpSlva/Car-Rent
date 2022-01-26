@@ -21,7 +21,7 @@ class CreateSpecificationUseCase {
         
 
         if (specificationAlreadyExists) {
-            throw new Error("specification already exists!")
+            throw new AppError("specification already exists!")
         }
 
        
