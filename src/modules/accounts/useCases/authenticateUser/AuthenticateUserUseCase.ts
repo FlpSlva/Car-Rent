@@ -40,7 +40,7 @@ class AuthenticateUserUseCase {
 
         if (!passwordMatch) {
 
-            throw new Error("Email or password incorrect !")
+            throw new AppError("Email or password incorrect !")
         }
 
         const token = sign({}, "9772f76273290ee40a41b713c1f977e4", {
