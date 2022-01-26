@@ -6,6 +6,7 @@ import swaggerUi from 'swagger-ui-express';
 import swaggerFile from './swagger.json'
 import "./database"
 import "./shared/container/cars"
+import { AppError } from "./errors/App.Error";
 
 
 const app = express();
