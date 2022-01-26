@@ -30,7 +30,7 @@ export async function ensureAuthenticated(req: Request, res: Response, next: Nex
 
         next();
     } catch {
-        throw new Error("Invalid token!")
+        throw new AppError("Invalid token!", 401)
     }
 
 
