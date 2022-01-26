@@ -12,7 +12,7 @@ export async function ensureAuthenticated(req: Request, res: Response, next: Nex
     const authHeader = req.headers.authorization;
 
     if (!authHeader) {
-        throw new Error("Token missing ")
+        throw new AppError("Token missing ", 401)
     }
 
     const [, token] = authHeader.split(" ")
