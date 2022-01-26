@@ -19,7 +19,7 @@ class CreateUserUseCase {
         )
 
         if(EmailAlreadyExists) {
-            throw new Error("User Already Exists !")
+            throw new AppError("User Already Exists !")
         }
 
         const passwordHash = await hash(password, 8)
